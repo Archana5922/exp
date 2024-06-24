@@ -1,0 +1,10 @@
+ Volume in drive C is Windows-SSD
+ Volume Serial Number is EA72-DB4B
+
+ Directory of C:\Users\amarn\OneDrive\Desktop\gitproject
+
+24/06/2024  12:56    <DIR>          .
+24/06/2024  12:47    <DIR>          ..
+24/06/2024  12:56                 0 test1.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  316,921,511,936 bytes free
