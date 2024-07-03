@@ -1,12 +1,14 @@
 # Use the official Nginx image as the base image
 FROM nginx:alpine
 
-# Copy your HTML file and CSS file to the Nginx html directory
-COPY index.html /usr/share/nginx/html/
-COPY styles.css /usr/share/nginx/html/
+# Copy the custom Nginx configuration file
+COPY default.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80 to the outside world
-EXPOSE 80
+# Copy all files from the current directory to the Nginx html directory
+COPY . /usr/share/nginx/html/
+
+# Expose port 8000 to the outside world
+EXPOSE 8000
 
 # Start Nginx when the container starts
 CMD ["nginx", "-g", "daemon off;"]
